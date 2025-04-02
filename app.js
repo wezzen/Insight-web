@@ -1,5 +1,7 @@
+const API_BASE_URL = window.APP_CONFIG.API_BASE_URL;
+
 function loadData() {
-    fetch('http://localhost:8080/categories', {
+    fetch(`${API_BASE_URL}/categories`, {
         method: 'GET',
         mode: 'cors',
     })
